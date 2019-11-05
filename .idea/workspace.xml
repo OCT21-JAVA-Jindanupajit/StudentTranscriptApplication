@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd0b52b4-1e8c-4e98-b1f6-f4652010148d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CourseEnrollment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transcript.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TranscriptApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Validator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transcript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transcript.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +50,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572901462776</updated>
-      <workItem from="1572901467616" duration="2034000" />
+      <workItem from="1572901467616" duration="2667000" />
+      <workItem from="1572963798790" duration="64000" />
+      <workItem from="1572981553593" duration="449000" />
     </task>
     <servers />
   </component>
@@ -66,7 +64,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

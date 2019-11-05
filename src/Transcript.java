@@ -54,6 +54,7 @@ public class Transcript {
         return courses;
     }
 
+//    Read only
 //    public void setCourseEnrollment(ArrayList<CourseEnrollment> courseEnrollment) {
 //        this.courseEnrollment = courseEnrollment;
 //    }
