@@ -6,8 +6,14 @@ public class Validator {
     public Validator() {
     }
 
-    public boolean isValidCourse(CourseEnrollment courseEnrollment, String courseCode) {
-        //TODO: public boolean isValidCourse(CourseEnrollment courseEnrollment, String courseCode)
+    public boolean isValidCourse(Transcript transcript, String courseCode) {
+
+        for (CourseEnrollment course : transcript.getCourses()) {
+
+            if (course.getCourseCode().equalsIgnoreCase(courseCode)) {
+                return true;
+            }
+        }
 
         return false;
     }

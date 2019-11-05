@@ -1,3 +1,5 @@
+import javax.swing.text.NumberFormatter;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Transcript {
@@ -7,22 +9,35 @@ public class Transcript {
 
     private final ArrayList<CourseEnrollment> courses =  new ArrayList<>();
 
+    private Validator validator = new Validator();
+
     public Transcript() {
     }
 
     public void addCourse(CourseEnrollment course) {
 
-        //TODO: public void addCourse(CourseEnrollment course)
+        if (validator.isValidCourse(this, course.getCourseCode()))
+            return; // Duplicate
+
+        courses.add(course);
     }
 
     public double getOverallGPA() {
-        //TODO: public double getOverallGPA()
-        return 0;
+        int courseCounter = 0;
+        double allQualityPoint = 0;
+        for (CourseEnrollment courseEnrollment : courses) {
+            courseCounter++;
+            allQualityPoint += courseEnrollment.getQualityPoint();
+        }
+
+        return (courseCounter>0)?allQualityPoint/courseCounter:0;
     }
 
     public String getFormattedGPA() {
-        //TODO: public String getFormattedGPA()
-        return "";
+        DecimalFormat df = new DecimalFormat("#.##");
+        df.setMaximumFractionDigits(2);
+        df.setMinimumFractionDigits(2);
+        return df.format(getOverallGPA());
     }
 
 
@@ -58,4 +73,24 @@ public class Transcript {
 //    public void setCourseEnrollment(ArrayList<CourseEnrollment> courseEnrollment) {
 //        this.courseEnrollment = courseEnrollment;
 //    }
+
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+
+        sb  .append("\n").append(firstName).append(" ").append(lastName).append("\n")
+            .append("Student ID: ").append(id).append("\n\n");
+        sb  .append(String.format("%-20s %7s %7s %20s\n", "Course", "Credit", "Grade", "Quality Points"));
+        sb  .append("==================== ======= ======= ====================\n");
+        for (CourseEnrollment course : courses) {
+            sb.append(course).append("\n");
+
+
+        }
+
+        sb.append("\nGPA: ").append(getFormattedGPA()).append("\n\n");
+
+        return sb.toString();
+    }
 }

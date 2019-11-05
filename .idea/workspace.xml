@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bd0b52b4-1e8c-4e98-b1f6-f4652010148d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CourseEnrollment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CourseEnrollment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Transcript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transcript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TranscriptApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TranscriptApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validator.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +42,20 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="TranscriptApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TranscriptApp" />
+      <module name="StudentTranscriptApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TranscriptApp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
