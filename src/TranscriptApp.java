@@ -46,20 +46,31 @@ public class TranscriptApp {
         KeyboardScanner kb = new KeyboardScanner();
         CourseEnrollment courseEnrollment = new CourseEnrollment();
 
-        String courseCode;
+        String userInput;
 
         while (true) {
-            courseCode = kb.getToken("Enter course: ");
+            userInput = kb.getToken("Enter course: ");
 
-            if (validator.isValidCourse(transcript, courseCode))
+            if (validator.isValidCourse(transcript, userInput))
                 System.out.println("Duplicate!, try again.");
             else
                 break;
         }
+        courseEnrollment.setCourseCode(userInput);
 
-        courseEnrollment.setCourseCode(courseCode);
+        while (true) {
+            userInput = kb.getToken("Enter credits: ");
 
-        courseEnrollment.setCredits(Integer.parseInt(kb.getToken("Enter credits: ")));
+                try {
+                    Integer.parseInt(userInput);
+                } catch (NumberFormatException e) {
+                    System.out.println("Not a number!, try again.");
+                    //e.printStackTrace();
+                }
+                //TODO: !!!
+
+        }
+        courseEnrollment.setCredits();
 
 
         courseEnrollment.setGrade(kb.getToken("Enter grade: "));

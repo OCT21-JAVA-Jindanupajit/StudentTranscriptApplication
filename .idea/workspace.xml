@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd0b52b4-1e8c-4e98-b1f6-f4652010148d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/StudentTranscriptApplication/CourseEnrollment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/StudentTranscriptApplication/Transcript.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/StudentTranscriptApplication/TranscriptApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/StudentTranscriptApplication/Validator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/StudentTranscriptApplication/lang/JaVALOR/utils/ConsoleMenu/ConsoleMenu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/StudentTranscriptApplication/lang/JaVALOR/utils/ConsoleMenu/MenuItem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/StudentTranscriptApplication/lang/JaVALOR/utils/ConsoleMenu/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/StudentTranscriptApplication/lang/JaVALOR/utils/KeyboardScanner/KeyboardScanner.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/StudentTranscriptApplication/lang/JaVALOR/utils/KeyboardScanner/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CourseEnrollment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CourseEnrollment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Transcript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transcript.java" afterDir="false" />
