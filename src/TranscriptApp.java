@@ -52,28 +52,39 @@ public class TranscriptApp {
             userInput = kb.getToken("Enter course: ");
 
             if (validator.isValidCourse(transcript, userInput))
-                System.out.println("Duplicate!, try again.");
+                System.out.println(" * Duplicate!, try again.");
             else
                 break;
         }
         courseEnrollment.setCourseCode(userInput);
 
+        int credit = 0;
         while (true) {
             userInput = kb.getToken("Enter credits: ");
 
-                try {
-                    Integer.parseInt(userInput);
-                } catch (NumberFormatException e) {
-                    System.out.println("Not a number!, try again.");
-                    //e.printStackTrace();
-                }
-                //TODO: !!!
+            try {
+                credit = Integer.parseInt(userInput);
+            } catch (NumberFormatException e) {
+                System.out.println(" * Not a number!, try again.");
+                continue;
+            }
 
+            if (validator.isValid(credit, 0, 5))
+                break;
+            else
+                System.out.println(" * Enter 0 - 5 only");
         }
-        courseEnrollment.setCredits();
+        courseEnrollment.setCredits(credit);
 
-
-        courseEnrollment.setGrade(kb.getToken("Enter grade: "));
+        String grade = "";
+        while (true) {
+            grade = kb.getToken("Enter grade: ").toUpperCase();
+            if (validator.isValid(grade.toUpperCase(),"^[ABCDF]$"))
+                break;
+            else
+                System.out.println(" * Enter 'A', 'B', 'C', 'D', or 'F' only");
+        }
+        courseEnrollment.setGrade(grade);
 
         return courseEnrollment;
     }
